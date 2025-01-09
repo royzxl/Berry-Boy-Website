@@ -11,16 +11,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <!----- Header and hero ----->
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.jpg"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -28,12 +29,91 @@
 
     <div class="text-box">
         <h1>Berry Boy Acai</h1>
-        <p>Sydney's newest and best acai</p>
+        <p>Anabolic acai</p>
         <a href="" class="hero-btn">Visit Us</a>
     </div>
-
     </section>
     
+    <!----- Our story ----->
+
+    <section class="our-story">
+        <div class="story-container">
+            <img src="images/our-story.png" alt="Our Story Image" class="story-image">
+            <div class="story-text">
+                <h1>Our Story</h1>
+                <p>Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                    Two young gym bros made love to acai Two young gym bros made love to acai
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!----- Testimonials ----->
+
+    <section class="testimonials">
+        <h1>Reviews</h1>
+        <p>See what our customers say</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/review1.png" >
+                <div>
+                    <p>This acai is the best ever. Everything about this place immediately puts 
+                        them 1st place for best Sydney acai. From the freshly cut strawberries 
+                        and bananas to the friendliest staff you’ll ever meet. Eaten it so many 
+                        times and can never get sick of it !!</p>
+                    <h3>Abella Bui</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/review2.png" >
+                <div>
+                    <p>BEST dessert in Hurstville and perhaps the only one. Açai is top notch and 
+                        I loved their wide range of smoothies and protein shakes. I personally 
+                        loved the mango majesty and I got the açai with a bit of pistachio sauce 
+                        on the base. Would highly recommend!</p>
+                    <h3>Jenny Yu</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- Footer ----->
+    
+    <section class="footer">
+        <h4>More Of Us</h4>
+        <div class="icons">
+            <a href="https://www.instagram.com/berryboy.acai/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@berryboyacai" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <p>Website made by 
+            <a href="https://www.instagram.com/roy_lii/" target="_blank">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+        </p>
+    </section>
+
+    <!----- Menu Toggle ----->
+
     <script>
 
         var navLinks = document.getElementById("navLinks");
