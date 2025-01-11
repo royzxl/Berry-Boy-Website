@@ -241,6 +241,10 @@ nav .fa {
     color: #fff;
 }
 
+.testimonials a {
+    text-decoration: none;
+}
+
 .testimonial-col img {
     height: 40px;
     margin-left: 5px;
