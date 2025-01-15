@@ -7,9 +7,9 @@
 /*------- HOME -------*/
 
 .header {
-    min-height: 80vh;
+    min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/hero.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/header.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -24,7 +24,7 @@ nav {
 
 /* logo */
 nav img {
-    width: 150px;
+    width: 100px;
 }
 
 /* header links */
@@ -41,7 +41,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: #fff;
+    color: #e6e7e8;
     text-decoration: none;
     font-size: 13px;
 }
@@ -70,7 +70,7 @@ nav img {
 /* hero texts */
 .text-box {
     width: 90%;
-    color: #fff;
+    color: #e6e7e8;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,25 +85,28 @@ nav img {
 .text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
-    color: #fff
+    color: #e6e7e8;
 }
 
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border:  1px solid #fff;
+    background: #134b92;
+    color: #e6e7e8;
+    border:  1px solid #134b92;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
+    font-weight: 400;
     position: relative;
     cursor: pointer;
     border-radius: 8px;
 }
 
 .hero-btn:hover {
-    border: 1px solid #134b92;
-    background: #134b92;
+    border: 1px solid #e6e7e8;
+    font-weight: 400;
+    background: #e6e7e8;
+    color: #523017;
     transition: 0.5s ease;
 }
 
@@ -133,9 +136,15 @@ nav .fa {
         transition: 0.5s;
     }
 
+    .nav-links ul li a.active {
+        color: #e6e7e8; 
+        border-bottom: 2px solid #e6e7e8;
+        padding-bottom: 2px; 
+    }
+
     nav .fa {
         display: block;
-        color: #fff;
+        color: #e6e7e8;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -238,7 +247,7 @@ nav .fa {
 }
 
 .testimonials p, h3, h1 {
-    color: #fff;
+    color: #e6e7e8;
 }
 
 .testimonials a {
@@ -253,7 +262,7 @@ nav .fa {
 }
 
 .testimonial-col .fa-solid{
-    color: #ffffff;
+    color: #523017;
 }
 
 @media (max-width: 1000px) {
@@ -308,7 +317,7 @@ nav .fa {
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: #e6e7e8;
 }
 
 .sub-header h1 {
@@ -372,6 +381,13 @@ nav .fa {
     margin-right: 30px;
 }
 
+.contact-col .fa-brands {
+    font-size: 28px;
+    color: #134b92;
+    margin: 10px;
+    margin-right: 30px;
+}
+
 .contact-col h1 {
     color: #000000;
     padding-bottom: 20px;
@@ -410,19 +426,20 @@ nav .fa {
 .send-btn {
     display: inline-block;
     text-decoration: none;
-    color: #000000;
+    color: #e6e7e8;
     border:  1px solid #134b92;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
+    background: #134b92;
     position: relative;
     cursor: pointer;
     border-radius: 8px;
 }
 
 .send-btn:hover {
-    border: 1px solid #134b92;
-    background: #134b92;
+    border: 1px solid #e6e7e8;
+    background: #e6e7e8;
+    color: #000000;
     transition: 0.5s ease;
 }
 
