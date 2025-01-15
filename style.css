@@ -7,9 +7,9 @@
 /*------- HOME -------*/
 
 .header {
-    min-height: 60vh;
+    min-height: 65vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/header.png);
+    background-image: linear-gradient(rgba(4,9,30,0.2), rgba(4,9,30,0.2)),url(images/header.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -43,12 +43,12 @@ nav img {
 .nav-links ul li a {
     color: #e6e7e8;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .nav-links ul li a.active {
-    color: #134b92; 
-    border-bottom: 2px solid #134b92;
+    color: #e6e7e8; 
+    border-bottom: 2px solid #e6e7e8;
     padding-bottom: 2px; 
 }
 
@@ -56,7 +56,7 @@ nav img {
     content: " ";
     width: 0%;
     height: 2px;
-    background: #134b92;
+    background: #e6e7e8;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -117,11 +117,16 @@ nav .fa {
 
 @media(max-width: 700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .nav-links ul li {
         display: block;
+    }
+
+    .sub-header h1 {
+        font-size: 40px;
+        padding-top: 55px;
     }
 
     .nav-links {
@@ -152,7 +157,6 @@ nav .fa {
 
     .nav-links ul {
         padding: 30px;
-
     }
 }
 
@@ -212,6 +216,10 @@ nav .fa {
 
     .story-text {
         text-align: center; 
+    }
+
+    .hero-btn {
+        margin-top: 50px;
     }
 }
 
@@ -391,6 +399,7 @@ nav .fa {
 .contact-col h1 {
     color: #000000;
     padding-bottom: 20px;
+    font-weight: 500;
 }
 
 .contact-col div p {
@@ -464,3 +473,4 @@ nav .fa {
         flex-basis: 100%; 
     }
 }
+
