@@ -299,18 +299,33 @@ nav .fa {
 }
 
 #toggleButton {
-    background-color: #f59e42;
+    background-color: #ff8c00;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
 }
 
-#toggleButton:hover {
-    background-color: #3a3a3a;
+/* Hover effect for smoothies */
+#toggleButton.smoothies:hover {
+    background-color: #134b92; /* Orange when hovering on Smoothies */
+}
+
+/* Hover effect for berries */
+#toggleButton.berries:hover {
+    background-color: #ff8c00; /* Dark gray when hovering on Berries */
+}
+
+/* Normal state background colors */
+#toggleButton.smoothies {
+    background-color: #ff8c00; /* Blue for Berries menu */
+}
+
+#toggleButton.berries {
+    background-color: #134b92; /* Orange for Smoothies menu */
 }
 
 .menu {
@@ -355,12 +370,12 @@ nav .fa {
 }
 
 .option {
-    background: #cce5ff;
+    background: #f5f5f5;
     padding: 10px; 
     border-radius: 6px;
     font-size: 30px; 
     font-weight: bold;
-    color: #003366;
+    color: #134b92;
     min-width: 160px; 
     text-align: center;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -402,6 +417,50 @@ nav .fa {
 .sauce-month {
     border: 3px solid #ff6600;
     background: #ffe6cc;
+}
+
+.menu h3 {
+    color: #134b92
+}
+
+#drinkMenu .drink-name {
+    font-weight: bold; /* Keeps the drink name bold */
+    font-size: 30px; /* Adjust the font size for the drink name */
+}
+
+#drinkMenu .drink-description {
+    font-size: 20px; /* Smaller font size for descriptions */
+    font-weight: normal; /* Ensures description is not bold */
+    color: #555; /* Optional: Softer color for descriptions */
+}
+
+#drinkMenu .step h2 {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Specific colors for Drink Menu categories */
+#drinkMenu .step:nth-of-type(1) h2 { background-color: #FFA500; } /* Indulgent */
+#drinkMenu .step:nth-of-type(2) h2 { background-color: #18d118; } /* Fresh */
+#drinkMenu .step:nth-of-type(3) h2 { background-color: #FF8C00; } /* Frappes */
+#drinkMenu .step:nth-of-type(4) h2 { background-color: #FFD700; } /* Fruit Boy */
+
+
+#drinkMenu .step:nth-of-type(4) .options .option:nth-of-type(1) .drink-name {
+    color: red;
+    font-weight: bold;
+}
+
+/* Target the Watermelon option and make it green */
+#drinkMenu .step:nth-of-type(4) .options .option:nth-of-type(2) .drink-name {
+    color: green;
+    font-weight: bold;
+}
+
+#drinkMenu .step:nth-of-type(4) .options .option:nth-of-type(3) .drink-name {
+    color: #5341cc; 
+    font-weight: bold;
 }
 
 
@@ -562,30 +621,30 @@ nav .fa {
     }
 
     .footer {
-        padding: 20px 0; /* Reduce padding */
-        font-size: 20px; /* Reduce font size */
+        padding: 10px 0; /* Reduce padding */
+        font-size: 15px; /* Reduce font size */
     }
 
     .footer h4 {
-        font-size: 22px; /* Smaller heading font size */
-        margin-bottom: 15px; /* Reduce bottom margin */
+        font-size: 15px; /* Smaller heading font size */
+        margin-bottom: 5px; /* Reduce bottom margin */
     }
 
     .footer p {
-        font-size: 18px; /* Smaller paragraph font size */
+        font-size: 15px; /* Smaller paragraph font size */
     }
 
     .icons .fa-brands {
-        font-size: 20px; /* Smaller icon size */
+        font-size: 15px; /* Smaller icon size */
         margin: 0 8px; /* Reduced margin between icons */
     }
 
     .fa-heart {
-        font-size: 20px; /* Smaller heart icon size */
+        font-size: 15px; /* Smaller heart icon size */
     }
 
     .footer .icons a {
-        font-size: 18px; /* Smaller icon link font size */
+        font-size: 15px; /* Smaller icon link font size */
     }
 }
 
@@ -682,16 +741,16 @@ nav .fa {
         max-width: 80%; 
         padding: 10px; 
     }
-
+    
     .menu h1 {
         font-size: 24px; 
     }
-
+    
     .menu h2 {
         font-size: 22px; 
         padding: 8px; 
     }
-
+    
     .menu p {
         font-size: 18px; 
     }
@@ -721,12 +780,21 @@ nav .fa {
     .sauce-month {
         font-size: 18px; 
     }
+
+    #drinkMenu .drink-name {
+        font-size: 18px; /* Adjust font size for drink names */
+    }
+
+    #drinkMenu .drink-description {
+        font-size: 16px; /* Adjust font size for drink descriptions */
+    }
+
 }
 
 @media (max-width: 880px) {
     .contact-col input, 
     .contact-col textarea {
-        width: 90%;  
+        width: 100%;  
         padding: 10px; 
         margin-bottom: 10px; 
         font-size: 14px; 
