@@ -293,39 +293,69 @@ nav .fa {
 }
 
 /*------- Menu -------*/
-.menu-toggle {
-    text-align: center;
-    margin: 20px 0;
+.toggle-container-wrapper {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 20px; 
 }
 
-#toggleButton {
-    background-color: #ff8c00;
-    color: white;
-    font-size: 25px;
-    padding: 10px 20px;
+.toggle-container {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px; 
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 15px; 
     border: none;
-    border-radius: 8px;
+    background: #e0e0e0;
+    color: #333;
+    font-size: 25px; 
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Hover effect for smoothies */
-#toggleButton.smoothies:hover {
-    background-color: #134b92; /* Orange when hovering on Smoothies */
+#berriesBtn.active {
+    background: #134b92;  
+    color: white;
 }
 
-/* Hover effect for berries */
-#toggleButton.berries:hover {
-    background-color: #ff8c00; /* Dark gray when hovering on Berries */
+#smoothiesBtn.active {
+    background: #ff7f00;  
+    color: white;
 }
 
-/* Normal state background colors */
-#toggleButton.smoothies {
-    background-color: #ff8c00; /* Blue for Berries menu */
+.toggle-btn:first-child {
+    border-right: 2px solid #ccc;
 }
 
-#toggleButton.berries {
-    background-color: #134b92; /* Orange for Smoothies menu */
+@media (max-width: 768px) {
+    .toggle-btn {
+        padding: 12px; /* Less padding on smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+/* On even smaller screens (mobile devices), make the buttons stack vertically */
+@media (max-width: 480px) {
+    .toggle-container {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 90%;
+        max-width: none; /* Remove max width */
+    }
+
+    .toggle-btn {
+        width: 100%; /* Make buttons take full width */
+        margin-bottom: 5px; /* Add space between buttons */
+    }
+
+    .toggle-btn:last-child {
+        margin-bottom: 0; /* Remove margin from the last button */
+    }
 }
 
 .menu {
@@ -421,6 +451,10 @@ nav .fa {
 
 .menu h3 {
     color: #134b92
+}
+
+#drinkMenu {
+    display: none;
 }
 
 #drinkMenu .drink-name {

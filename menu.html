@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
     <body>
     <!----- Header and hero ----->
     <section class="sub-header">
@@ -28,9 +29,13 @@
         <h1>MENU</h1>
     </section>
 
-    <div class="menu-toggle">
-        <button id="toggleButton" onclick="switchMenu()">Smoothies</button>
+    <div class="toggle-container-wrapper">
+        <div class="toggle-container">
+            <button id="berriesBtn" class="toggle-btn active" onclick="toggleSelection('Berries')">Berries</button>
+            <button id="smoothiesBtn" class="toggle-btn" onclick="toggleSelection('Smoothies')">Smoothies</button>
+        </div>
     </div>
+       
 
     <!----- Menu ----->
     <div class="menu" id="berryMenu">
@@ -205,26 +210,27 @@
             navLinks.style.right = "-200px";
         }
 
-        function switchMenu() {
-        var berryMenu = document.getElementById("berryMenu");
-        var drinkMenu = document.getElementById("drinkMenu");
-        var toggleButton = document.getElementById("toggleButton");
+        function toggleSelection(selected) {
+            document.getElementById("smoothiesBtn").classList.remove("active");
+            document.getElementById("berriesBtn").classList.remove("active");
 
-        // Toggle visibility
-        if (berryMenu.style.display === "none") {
-            berryMenu.style.display = "block";
-            drinkMenu.style.display = "none";
-            toggleButton.textContent = "Smoothies"; // Change button text
-            toggleButton.classList.remove('berries');
-            toggleButton.classList.add('smoothies'); 
-        } else {
-            berryMenu.style.display = "none";
-            drinkMenu.style.display = "block";
-            toggleButton.textContent = "Berries"; // Change button text
-            toggleButton.classList.remove('smoothies');
-            toggleButton.classList.add('berries');
-        }
-    }
+            document.getElementById(selected.toLowerCase() + "Btn").classList.add("active");
+
+            // Hide and show the correct menus
+            if (selected === "Smoothies") {
+                document.getElementById("berryMenu").style.display = "none";
+                document.getElementById("drinkMenu").style.display = "block";
+            } else {
+                document.getElementById("drinkMenu").style.display = "none";
+                document.getElementById("berryMenu").style.display = "block";
+            }
+}
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            toggleSelection("Berries"); // Show Smoothies by default
+        });
+       
 
     </script>
 
