@@ -44,7 +44,7 @@ nav img {
 .nav-links ul li a {
     color: #e6e7e8;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .nav-links ul li a.active {
@@ -80,18 +80,18 @@ nav img {
 }
 
 .text-box h1 {
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 18px;
     color: #e6e7e8;
 }
 
 .dots-separator {
     position: relative;
-    font-size: 20px; 
+    font-size: 18px; 
     margin: 0 15px; 
 }
 
@@ -108,8 +108,8 @@ nav img {
     background: #134b92;
     color: #e6e7e8;
     border:  1px solid #134b92;
-    padding: 16px 36px;
-    font-size: 20px;
+    padding: 14px 30px;
+    font-size: 16px;
     font-weight: 400;
     position: relative;
     cursor: pointer;
@@ -132,7 +132,7 @@ nav .fa {
 /* Our story section */
 .our-story {
     width: 80%;
-    max-width: 1800px; 
+    max-width: 1500px; 
     margin: auto;
     padding-top: 180px;
     text-align: center; 
@@ -149,8 +149,8 @@ nav .fa {
 }
 
 .story-image {
-    width: 80%; 
-    max-width: 600px; 
+    width: 70%; 
+    max-width: 500px; 
     height: auto; 
     object-fit: cover;
     border-radius: 8px;
@@ -162,7 +162,7 @@ nav .fa {
 }
 
 .story-text h1 {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #000000;
@@ -170,7 +170,7 @@ nav .fa {
 
 .story-text p {
     color: #000000;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -180,7 +180,7 @@ nav .fa {
 .testimonials {
     position: relative; 
     width: 100%; 
-    padding: 100px 0; 
+    padding: 60px 0; 
     text-align: center;
     background: #0c2e5a;
     background-size: cover; 
@@ -189,7 +189,7 @@ nav .fa {
 }
 
 .testimonials h1, p {
-    font-size: 50px;
+    font-size: 30px;
     padding-bottom: 20px;
 }
 
@@ -214,12 +214,12 @@ nav .fa {
 
 .testimonials p, h3, h1 {
     color: #e6e7e8;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .testimonials a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .testimonial-col img {
@@ -231,7 +231,7 @@ nav .fa {
 
 .testimonial-col .fa-solid{
     color: #e6e7e8;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -242,7 +242,7 @@ nav .fa {
 }
 
 .footer p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .footer h4{
@@ -258,7 +258,7 @@ nav .fa {
     cursor: pointer;
     padding: 18px 0;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .fa-heart {
@@ -304,7 +304,7 @@ nav .fa {
     display: flex;
     border-radius: 12px;
     overflow: hidden;
-    width: 300px; 
+    width: 250px; 
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -314,7 +314,7 @@ nav .fa {
     border: none;
     background: #e0e0e0;
     color: #333;
-    font-size: 25px; 
+    font-size: 20px; 
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
 }
@@ -359,7 +359,7 @@ nav .fa {
 }
 
 .menu {
-    max-width: 1200px; 
+    max-width: 1000px; 
     margin: 30px auto;
     background: white;
     padding: 20px;
@@ -382,12 +382,12 @@ nav .fa {
     color: white;
     padding: 12px;
     border-radius: 6px;
-    font-size: 30px; 
+    font-size: 20px; 
     margin-bottom: 8px;
 }
 
 .menu p {
-    font-size: 30px; 
+    font-size: 20px; 
     font-weight: bold;
 }
 
@@ -403,7 +403,7 @@ nav .fa {
     background: #f5f5f5;
     padding: 10px; 
     border-radius: 6px;
-    font-size: 30px; 
+    font-size: 20px; 
     font-weight: bold;
     color: #134b92;
     min-width: 160px; 
@@ -433,7 +433,7 @@ nav .fa {
     background: #ffcc80;
     padding: 10px; 
     border-radius: 6px;
-    font-size: 30px; 
+    font-size: 20px; 
     font-weight: bold;
     color: #134b92; 
     min-width: 160px; 
@@ -459,7 +459,7 @@ nav .fa {
 
 #drinkMenu .drink-name {
     font-weight: bold; /* Keeps the drink name bold */
-    font-size: 30px; /* Adjust the font size for the drink name */
+    font-size: 20px; /* Adjust the font size for the drink name */
 }
 
 #drinkMenu .drink-description {
@@ -496,8 +496,6 @@ nav .fa {
     color: #5341cc; 
     font-weight: bold;
 }
-
-
 
 
 /*------- CONTACT -------*/
@@ -537,10 +535,10 @@ nav .fa {
 
 .contact-us .row {
     display: flex;
-    justify-content: space-between; /* Adds spacing between columns */
-    align-items: flex-start; /* Aligns items at the top */
-    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
-    gap: 20px; /* Adds spacing between the columns */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 
 .contact-col div {
@@ -567,17 +565,17 @@ nav .fa {
     color: #000000;
     padding-bottom: 20px;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .contact-col div p {
     padding: 0;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .contact-col div h5 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 5px;
     color: #134b92;
     font-weight: 400;
@@ -598,7 +596,7 @@ nav .fa {
 .contact-col textarea::placeholder {
     color: #868686b4; 
     font-weight: 400; 
-    font-size: 20px; 
+    font-size: 18px; 
     opacity: 1; 
 }
 
@@ -608,7 +606,7 @@ nav .fa {
     color: #e6e7e8;
     border:  1px solid #134b92;
     padding: 12px 34px;
-    font-size: 25px;
+    font-size: 20px;
     background: #134b92;
     position: relative;
     cursor: pointer;
