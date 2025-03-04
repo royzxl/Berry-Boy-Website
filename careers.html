@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Berry Boy</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="careers.html"class="active">CAREERS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CAREERS</h1>
+    </section>
+
+    <!----- Apply ----->
+
+    <section class="job">
+        <div class="job-container">
+            <h1>Join Our Team!</h1>
+            <p>Send us you details below</p>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f2a900b2-d1cc-4c60-8dce-c5705d32cb03">
+            <input type="text" name="first name" placeholder="FIRST NAME" required>
+            <input type="text" name="last name" placeholder="LAST NAME" required>
+            <input type="email" name="email" placeholder="EMAIL" required>
+            <input type="number" name="number" placeholder="PHONE NUMBER" required>
+            <input type="number" name="age" placeholder="AGE" required>
+            <label for="resume">UPLOAD RESUME:</label>
+            <input type="file" name="resume" required>
+            <textarea rows="8" name="message" placeholder="AVAILABILITIES" required></textarea>
+            <textarea rows="8" name="message" placeholder="WHY WOULD YOU LIKE TO WORK FOR US?" required></textarea>
+            <button type="submit" class="send-btn">APPLY</button>
+        </form>
+    </section>
+
+    <!----- Footer ----->
+    
+    <section class="footer">
+        <h4>More Of Us</h4>
+        <div class="icons">
+            <a href="https://www.instagram.com/berryboy.acai/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@berryboyacai" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <p>BERRY BOY &copy | Website made by  
+            <a href="https://www.instagram.com/roy_lii/" target="_blank">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+        </p>
+    </section>
+
+    <!----- Menu Toggle ----->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
