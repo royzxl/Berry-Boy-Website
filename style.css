@@ -26,7 +26,7 @@ nav {
 
 /* logo */
 nav img {
-    width: 150px;
+    width: 100px;
 }
 
 /* header links */
@@ -531,7 +531,7 @@ h2 {
 }
 
 /* Job Application Form */
-form {
+.job form {
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
@@ -540,7 +540,7 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-form input,
+.job form input,
 form textarea {
     width: 90%;
     padding: 10px;
@@ -550,30 +550,13 @@ form textarea {
     font-size: 16px;
 }
 
-form input[type="file"] {
+.job form input[type="file"] {
     padding: 5px;
 }
 
-form textarea {
+.job form textarea {
     resize: none;
     height: 120px;
-}
-
-.send-btn {
-    display: inline-block;
-    background: #ff5733;
-    color: #fff;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.send-btn:hover {
-    background: #e04d2a;
 }
 
 /* Responsive */
