@@ -278,11 +278,10 @@ nav .fa {
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/hero.png);
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: #e6e7e8;
+    background-color: #1F3258;
 }
 
 .sub-header h1 {
@@ -932,6 +931,7 @@ form textarea {
 
     .contact-col h1 {
         font-size: 20px; 
+        margin-left: 20px;
     }
 
     .contact-col span h5 {
@@ -948,3 +948,31 @@ form textarea {
     }
 }
 
+.gallery {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}

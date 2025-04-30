@@ -39,15 +39,13 @@
         </div>
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="f2a900b2-d1cc-4c60-8dce-c5705d32cb03">
-            <input type="text" name="first name" placeholder="FIRST NAME" required>
-            <input type="text" name="last name" placeholder="LAST NAME" required>
+            <input type="text" name="name" placeholder="FULL NAME" required>
             <input type="email" name="email" placeholder="EMAIL" required>
             <input type="number" name="number" placeholder="PHONE NUMBER" required>
-            <input type="number" name="age" placeholder="AGE" required>
-            <label for="resume">UPLOAD RESUME:</label>
-            <input type="file" name="resume" required>
-            <textarea rows="8" name="message" placeholder="AVAILABILITIES" required></textarea>
-            <textarea rows="8" name="message" placeholder="WHY WOULD YOU LIKE TO WORK FOR US?" required></textarea>
+            <label for="resume-link">RESUME LINK (Google Drive / Dropbox):</label>
+            <input type="url" id="resume-link" name="resume_link" placeholder="Paste a shareable link here" required>
+            <textarea rows="8" name="availabilities" placeholder="AVAILABILITIES" required></textarea>
+            <textarea rows="8" name="why" placeholder="WHY WOULD YOU LIKE TO WORK FOR US?" required></textarea>
             <button type="submit" class="send-btn">APPLY</button>
         </form>
     </section>
