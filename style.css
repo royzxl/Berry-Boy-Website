@@ -7,139 +7,133 @@
 /*------- HOME -------*/
 
 /*------- HOME -------*/
-
 .header {
-    min-height: 65vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.2), rgba(4,9,30,0.2)),url(images/header.png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  min-height: 52vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.2), rgba(4,9,30,0.2)),url(images/header.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 0.8% 3.5%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* logo */
 nav img {
-    width: 100px;
+  width: 75px;
 }
 
-/* header links */
 .nav-links {
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 
 .nav-links ul li {
-    color: #e6e7e8;
-    list-style: none;
-    display: inline-block;
-    padding: 8px 20px;
-    position: relative;
+  color: #e6e7e8;
+  list-style: none;
+  display: inline-block;
+  padding: 4px 12px;
+  position: relative;
 }
 
 .nav-links ul li a {
-    color: #e6e7e8;
-    text-decoration: none;
-    font-size: 16px;
+  color: #e6e7e8;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 .nav-links ul li a.active {
-    color: #e6e7e8; 
-    border-bottom: 2px solid #e6e7e8;
-    padding-bottom: 2px; 
+  color: #e6e7e8; 
+  border-bottom: 2px solid #e6e7e8;
+  padding-bottom: 2px; 
 }
 
 .nav-links ul li a::after {
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background: #e6e7e8;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #e6e7e8;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
 
 .nav-links ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-/* hero texts */
-
 .text-box {
-    width: 90%;
-    color: #e6e7e8;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+  width: 90%;
+  color: #e6e7e8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
 
 .text-box h1 {
-    font-size: 80px;
+  font-size: 54px;
 }
 
 .text-box p {
-    margin: 10px 0 40px;
-    font-size: 18px;
-    color: #e6e7e8;
+  margin: 5px 0 22px;
+  font-size: 14px;
+  color: #e6e7e8;
 }
 
-
 .dots-separator {
-    position: relative;
-    font-size: 18px; 
-    margin: 0 15px; 
+  position: relative;
+  font-size: 14px; 
+  margin: 0 8px; 
 }
 
 .dots-separator:not(:last-child)::after {
-    content: "•"; 
-    position: absolute;
-    right: -20px; 
-    color: #e6e7e8; 
+  content: "•"; 
+  position: absolute;
+  right: -12px; 
+  color: #e6e7e8; 
 }
 
 .hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    background: #134b92;
-    color: #e6e7e8;
-    border:  1px solid #134b92;
-    padding: 14px 30px;
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    cursor: pointer;
-    border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  background: #134b92;
+  color: #e6e7e8;
+  border: 1px solid #134b92;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 .hero-btn:hover {
-    border: 1px solid #e6e7e8;
-    font-weight: 400;
-    background: #e6e7e8;
-    color: #523017;
-    transition: 0.5s ease;
+  border: 1px solid #e6e7e8;
+  background: #e6e7e8;
+  color: #523017;
+  transition: 0.5s ease;
 }
 
-/* Menu buttons */
 nav .fa {
-    display: none;
+  display: none;
 }
+
+
 
 /* Our story section */
 .our-story {
     width: 80%;
     max-width: 1500px; 
     margin: auto;
-    padding-top: 180px;
+    padding-top: 100px;
     text-align: center; 
-    margin-bottom: 180px;
+    margin-bottom: 100px;
 }
 
 .story-container {
@@ -204,8 +198,7 @@ nav .fa {
 }
 
 .testimonial-col {
-    flex: 0 0 44%; 
-    margin-bottom: 5%; 
+    flex: 0 0 44%;  
     text-align: left;
     background: #134b929c;
     border-radius: 20px;
@@ -284,6 +277,12 @@ nav .fa {
     background-color: #1F3258;
 }
 
+@media (max-width: 100px) {
+    .sub-header {
+        height: 30vh;
+    }
+}
+
 .sub-header h1 {
     font-size: 50px;
     margin-top: 30px;
@@ -319,6 +318,34 @@ nav .fa {
     font-size: 20px; 
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+}
+
+.mascot img{ 
+    width: 250px;
+    height: 250px; 
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));  
+}
+
+.mascot2 img{ 
+    width: 160px;
+    height: 230px; 
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));  
+}
+
+@media (max-width: 800px) {
+    .mascot img{ 
+    width: 150px;
+    height: 150px; 
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));  
+    }
+}
+
+@media (max-width: 1500px) {
+    .mascot2 img{ 
+    width: 110px;
+    height: 170px; 
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));  
+    }
 }
 
 #berriesBtn.active {
@@ -418,7 +445,8 @@ nav .fa {
 
 .option img {
     width: 100px;
-    height: auto;
+    height: 100px; /* Set a fixed height */
+    object-fit: contain; /* This will maintain aspect ratio while fitting within the dimensions */
     margin-bottom: 8px;
 }
 
@@ -576,6 +604,9 @@ form textarea {
 
 
 /*------- CONTACT -------*/
+contact.html {
+    background: #f9f9f9;
+}
 
 /* Map */
 .location {
@@ -591,8 +622,17 @@ form textarea {
 
 /* Contact details */
 .contact-us {
-    width: 80%;
+    width: 60%;
     margin: auto;
+}
+
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-col {
@@ -615,13 +655,13 @@ form textarea {
     justify-content: space-between; 
     align-items: flex-start; 
     flex-wrap: wrap; 
-    gap: 10px; 
+    gap: 8px; 
 }
 
 .contact-col div {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .contact-col div .fa-solid {
@@ -652,7 +692,7 @@ form textarea {
 }
 
 .contact-col div h5 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
     color: #134b92;
     font-weight: 400;
@@ -666,14 +706,14 @@ form textarea {
     border: 1px solid #000000;
     border-radius: 8px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact-col input::placeholder, 
 .contact-col textarea::placeholder {
     color: #868686b4; 
     font-weight: 400; 
-    font-size: 18px; 
+    font-size: 16px; 
     opacity: 1; 
 }
 
@@ -757,7 +797,7 @@ form textarea {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1400px) {
     .header {
         min-height: 60vh;
     }
@@ -784,14 +824,14 @@ form textarea {
 
 @media (max-width: 700px) {
     .header {
-        min-height: 30vh;
+        min-height: 50vh;
         background-image: none;
         background: #0c2e5a;
     }
 
     .text-box {
         margin-top: 40px;
-        display: none;
+        
     }
 
     .text-box h1 {
@@ -800,6 +840,10 @@ form textarea {
 
     .nav-links ul li {
         display: block;
+    }
+
+    .sub-header {
+        min-height: 50vh;
     }
 
     .sub-header h1 {
