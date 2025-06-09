@@ -758,6 +758,7 @@ contact.html {
     border-radius: 8px;
     box-sizing: border-box;
     font-size: 18px;
+    resize: none;
 }
 
 .contact-col input::placeholder, 
@@ -1015,6 +1016,7 @@ contact.html {
         margin-bottom: 10px; 
         font-size: 14px; 
         box-sizing: border-box; 
+        resize: none;
     }
 
     .contact-col input::placeholder,
