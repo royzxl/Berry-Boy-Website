@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Fredoka", serif;
+    font-family: "hoss-round", sans-serif;
 }
 
 html, body {
@@ -994,6 +994,19 @@ contact.html {
         font-size: 16px; /* Adjust font size for drink descriptions */
     }
 
+}
+.option.light-green {
+    background-color: #7af57a; /* light green */
+    border: 2px solid #7af57a; /* optional: green border */
+    color: #ffffff; /* text color stays the same unless you want to change it */
+}
+
+.drink-name1 {
+    color: #62b362;
+}
+
+.price-green {
+    color: #62b362;
 }
 
 @media (max-width: 880px) {
